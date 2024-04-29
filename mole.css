@@ -42,12 +42,17 @@ body {
 @media (max-width: 600px) {
    /* Adjustments for smaller screens */
    #board div {
-       width: 88%; /* Adjusted width for smaller screens */
-       max-width: none; /* Removed maximum width for smaller screens */
+       width: 100%; /* Adjusted width for smaller screens */
+       max-width: none; /* Removed maximum width for smaller screens */   
    }
 
    body {
       zoom: 70%;
+   }
+
+   #board {
+      width: auto;
+      height: 800px;
    }
 }
 
@@ -55,11 +60,11 @@ body {
 /* Media query for screens wider than 540px */
 @media (min-width: 541px) {
    #board {
-       width: 200px;
+       width: 540px;
    }
 
    #board div {
-       width: 100px;
+       width: 180px;
    }
 }
 
@@ -68,4 +73,4 @@ body {
    #board div {
        width: 30%; /* Adjusted width for smaller screens */
    }
-}     
+}       
