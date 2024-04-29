@@ -1,0 +1,71 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   background-image: url(mario-bg.jpg);
+   background-size: cover;
+   overflow: hidden;
+}
+
+#board {
+   width: 540px;
+   height: 540px;
+   /* background-color: green; */
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   background-image: url(soil.png);
+   background-size: cover;
+   border: 3px solid white;
+   border-radius: 20px;
+}
+
+#board div {
+   width: 180px;
+   height: 180px;
+   background-image: url(pipe.png);
+   background-size: cover;
+}
+
+#board div img {
+   width: 100px;
+   height: 100px;
+
+
+   user-select: none;
+   -moz-user-select: none;
+   -webtkit-user-drag: none;
+   -webtkit-user-select: none;
+   -ms-user-select: none;
+} 
+
+
+@media (max-width: 600px) {
+   /* Adjustments for smaller screens */
+   #board div {
+       width: 88%; /* Adjusted width for smaller screens */
+       max-width: none; /* Removed maximum width for smaller screens */
+   }
+
+   body {
+      zoom: 70%;
+   }
+}
+
+
+/* Media query for screens wider than 540px */
+@media (min-width: 541px) {
+   #board {
+       width: 200px;
+   }
+
+   #board div {
+       width: 100px;
+   }
+}
+
+/* Media query for screens narrower than 540px */
+@media (max-width: 400px) {
+   #board div {
+       width: 30%; /* Adjusted width for smaller screens */
+   }
+}     
